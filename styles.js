@@ -11,38 +11,32 @@ const styles = StyleSheet.create({
     height: '100%',
   },
 
-  header: {
+  header: { //Cosmorama, localizacao
     paddingLeft: 10,
-    paddingTop: 50,
+    paddingTop: 20,
     flexDirection: 'row',
     alignItems: 'center'
   },
 
-  textoheader: {
+  textoheader: { //texto Cosmorama
     color: 'white',
     paddingLeft: 20,
     fontSize: 18,
     paddingRight: 2,
   },
 
-  hoje: {
-    padding: 20,
-    paddingTop: 20,
+  hoje: { //Temp
+    padding: 10,
   },
 
-  txtagr: {
-    color: 'white',
-    fontSize: 15,
-
-  },
-
-  clima: {
+  climaheader: { //Temp e icone
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center', 
+    paddingLeft: 10, 
   },
 
-  alerta: {
-    width: 380,
+  alerta: { //Alerta
+    width: "95%",
     height: 70,
     backgroundColor: '#b80000',
     borderRadius: 10,
@@ -52,23 +46,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-  cHorizontal: {
-    width: '100%',
+  cHorizontal: { //scroll horizontal
+    width: '95%',
+    alignSelf: 'center', //esse eu peguei do gemini
     height: 120,
     backgroundColor: '#01324946',
     borderRadius: 15,
     marginTop: 20,
+    paddingHorizontal: 10,
   },
 
   clima: {
-    padding: 13,
+    padding: 12,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   iconeClima: {
-    width: 50,
-    height: 40,
     marginTop: 5,
     marginBottom: 5,
   },
@@ -79,8 +73,10 @@ const styles = StyleSheet.create({
   },
 
   climaVertical: {
-    width: '100%',
-    height: 290,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    width: '95%',
+    alignSelf: 'center', //esse eu peguei do gemini
     backgroundColor: '#00000046',
     borderRadius: 15,
     marginTop: 20,
@@ -89,17 +85,48 @@ const styles = StyleSheet.create({
   dia: {
     flexDirection: 'row',
   },
+
   nomeDia: {
     color: 'white',
     fontSize: 15,
     marginLeft: 15,
     marginTop: 10,
   },
+
   iconeVertical: {
-    width: 35,
-    height: 35,
+    marginLeft: 100,
+    marginBottom: 5,
     marginTop: 5,
   },
+
+  informacoes: {
+    flexDirection: 'row',
+    paddingTop: 20,
+    justifyContent: 'space-between',
+    width: '95%', 
+    alignSelf: 'center', 
+    marginBottom: 10, 
+  },
+  
+  infoClima: {
+    width: "48%",
+    height: 160,
+    backgroundColor: '#00000046',
+    borderRadius: 20,
+  },
+
+  textInfo: {
+    padding: 15,
+    color: 'white',
+    fontSize: 16,
+  },
+
+  numeroInfo: {
+    color: 'white',
+    marginLeft: 15,
+    fontSize: 20,
+    fontWeight: 'bold',
+  }
 });
 
 export default styles;
