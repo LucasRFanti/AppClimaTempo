@@ -7,14 +7,19 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Entypo from '@expo/vector-icons/Entypo'; 
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 
 export default function App() {
   return (
  
-<ImageBackground source={require('./assets/fundo.jpg')} style={styles.fundo}>
-    <ScrollView style={styles.container}>
+    <LinearGradient style={styles.container}
+    colors={["#3A61B4", "#FD681D", "#FF4133"]}
+    start={{x: 1, y:0}}
+    end={{x: 1, y:1.1}}
+    locations={[0.1, 0.3, 3]}> 
+       <ScrollView style={styles.container}>
         <View style={styles.header}>
           <Ionicons name="menu" size={32} color="white" />
           <Text style={styles.textoheader}>Cosmorama</Text>
@@ -45,13 +50,13 @@ export default function App() {
 
             <View style={styles.clima}>
               <Text style={styles.txtClima}>27º</Text>
-              <Feather name="cloud-drizzle" size={30} color="#4a7ba2" style={styles.iconeClima} />
+              <Feather name="cloud-drizzle" size={30} color="#2eb6e6" style={styles.iconeClima} />
               <Text style={styles.txtClima}>13:00</Text>
             </View>
 
             <View style={styles.clima}>
               <Text style={styles.txtClima}>25º</Text>
-              <Feather name="cloud-drizzle" size={30} color="#4a7ba2" style={styles.iconeClima} />
+              <Feather name="cloud-drizzle" size={30} color="#2eb6e6" style={styles.iconeClima} />
               <Text style={styles.txtClima}>14:00</Text>
             </View>
 
@@ -240,6 +245,6 @@ export default function App() {
 
       <StatusBar style="auto" />
     </ScrollView>
-  </ImageBackground>
+  </LinearGradient>
   );
 }
