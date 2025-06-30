@@ -7,7 +7,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Entypo from '@expo/vector-icons/Entypo'; 
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-
+//teste
 
 
 export default function App() {
